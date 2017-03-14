@@ -9,6 +9,8 @@
 	class CampaignSelection extends Framework\ModelAbstract implements Ad\Model\CampaignSelectionInterface
 	{
 
+		private $_data;
+
 		public function __construct ( 
 			Framework\Registry $registry
 		)
@@ -17,15 +19,15 @@
 		}
 
 
-		public function run ( array $campaigns_tags = null, array $options = null )
+		public function run ( array $data = null, array $options = null )
 		{
-
+			$this->_data = $data;
 		}
 
 
 		public function getAdCode ( )
 		{
-			return '<html><head></head><body><h1>render ok</h1></body></html>';
+			return '<code>'.json_encode( $this->_data ).'</code>';
 		}
 
 	}
