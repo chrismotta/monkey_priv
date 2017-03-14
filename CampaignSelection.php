@@ -27,7 +27,12 @@
 
 		public function getAdCode ( )
 		{
-			return '<code>'.json_encode( $this->_data ).'</code>';
+			$return = '<div style="display:none">';
+			foreach($this->_data as $click_id){
+				$return.= '<img src="https://www.linuxtotal.com.mx/img/tux.png#'.$click_id.'"/>';
+			}
+			$return.= '</div>';
+			return $return;
 		}
 
 	}
