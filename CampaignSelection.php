@@ -27,7 +27,7 @@
 
 		public function getAdCode ( )
 		{
-			$return = '<div style="display:none">';
+			$return = '<div style="display:none !important">';
 			foreach($this->_data as $click_id){
 				$return.= '<img src="https://www.linuxtotal.com.mx/img/tux.png#'.$click_id.'"/>';
 			}
