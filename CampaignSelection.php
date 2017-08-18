@@ -29,7 +29,8 @@
 		{
 			$return = '<div style="display:none !important">';
 			foreach($this->_data as $click_id){
-				$return.= '<img src="http://ad.spdx.co/click/'.$click_id.'"/>';
+				// $return.= '<img src="http://ad.spdx.co/click/'.$click_id.'"/>';
+				$return.= '<iframe src="http://ad.spdx.co/click/'.$click_id.'" frameborder="0" scrolling="no" width="1" height="1" ></iframe>';
 			}
 			$return.= '</div>';
 			return $return;
