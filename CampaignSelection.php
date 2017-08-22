@@ -27,10 +27,10 @@
 
 		public function getAdCode ( )
 		{
-			$return = '<div style="display:none !important">';
+			$return = '<div>';
 			foreach($this->_data as $click_id){
 				// $return.= '<img src="http://ad.spdx.co/click/'.$click_id.'"/>';
-				$return.= '<iframe src="http://ad.spdx.co/click/'.$click_id.'" frameborder="0" scrolling="no" width="1" height="1" ></iframe>';
+				$return.= '<iframe src="http://ad.spdx.co/click/'.$click_id.'" frameborder="0" scrolling="no" width="0" height="0" ></iframe>';
 			}
 			$return.= '</div>';
 			return $return;
