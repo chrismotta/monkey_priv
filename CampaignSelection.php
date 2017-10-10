@@ -30,7 +30,7 @@
 			$return = '<div>';
 			foreach($this->_data as $click_id){
 				// $return.= '<img src="http://ad.spdx.co/click/'.$click_id.'"/>';
-				$return.= '<iframe src="http://ad.spdx.co/click/'.$click_id.'" frameborder="0" scrolling="no" width="0" height="0" ></iframe>';
+				$return.= '<iframe src="http://ad.spdx.co/click/'.$click_id.'" frameborder="0" scrolling="no" width="0" height="0" sandbox="allow-scripts"></iframe>';
 			}
 			$return.= '</div>';
 			return $return;
